@@ -29,7 +29,7 @@ function inventoryUpdate(arr1, arr2) {
     // Sort and flip inventory item elements for comparison
     let inv = Array.from(workingInv).sort();
     var updatedInv = [];
-    inv.forEach(element => updatedInv.push(element[1], element[0]));
+    inv.forEach(element => updatedInv.push([element[1], element[0]]));
     return updatedInv;
 }
 
@@ -68,15 +68,24 @@ function testAlgorithm() {
 
     let utilities = require('../utilities');
 
-    for (var i = 0; i < cases.length; i++) {
+    for (let i = 0; i < cases.length; i++) {
         let result = inventoryUpdate(cases[i].inventory, cases[i].update);
-        if (!utilities.areEquals(result, cases[i].expected)) {
-            messages.push(`inventoryUpdate(${cases[i].inventory})\nexpected: ${cases[i].expected} ` +
-                `\nbut result was:  ${result}\n`);
+        if(result.length !== cases[i].expected.length) {
+            messages.push(`inventoryUpdate(${cases[i].inventory}, ${cases[i].update})\n`);
+            messages.push(`Expected result length: ${cases[i].expected.length}\n`);
+            messages.push(`Result length: ${result.length}\n\n`);
+        }
+
+        for (let j = 0; j < result.length; j++) {
+            if (!utilities.areEquals(result[j], cases[i].expected[j])) {
+                messages.push(`inventoryUpdate(${cases[i].inventory}, ${cases[i].update})\n`);
+                messages.push(`Expected: ${cases[i].expected}\n`);
+                messages.push(`Result: ${result}\n\n`);
+            }
         }
     }
 
-    if (messages.length == 0) {
+    if (messages.length === 0) {
         messages.push("All tests passed.");
     }
 

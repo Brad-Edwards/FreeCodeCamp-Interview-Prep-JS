@@ -75,7 +75,7 @@ function testAlgorithm() {
         }
     }
 
-    if (messages.length == 0) {
+    if (messages.length === 0) {
         messages.push("All tests passed.");
     }
     
