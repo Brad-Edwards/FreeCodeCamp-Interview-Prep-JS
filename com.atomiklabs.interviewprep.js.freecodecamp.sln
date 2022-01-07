@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "com.atomiklabs.interviewprep.js.freecodecamp", "com.atomiklabs.interviewprep.js.freecodecamp\com.atomiklabs.interviewprep.js.freecodecamp.njsproj", "{D0A6B7E2-0C57-4BE4-9695-9624E1CF9788}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0A6B7E2-0C57-4BE4-9695-9624E1CF9788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0A6B7E2-0C57-4BE4-9695-9624E1CF9788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0A6B7E2-0C57-4BE4-9695-9624E1CF9788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0A6B7E2-0C57-4BE4-9695-9624E1CF9788}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A30BA11C-DBED-44DB-AEF0-96A49ABB6566}
+	EndGlobalSection
+EndGlobal
