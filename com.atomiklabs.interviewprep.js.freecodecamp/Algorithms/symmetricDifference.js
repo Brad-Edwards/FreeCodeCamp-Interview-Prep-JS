@@ -3,7 +3,7 @@
 module.exports = {
     tests: function () {
         return testAlgorithm();
-    },
+    }
 }
 
 /*
@@ -18,8 +18,8 @@ function symmetricDifference(args) {
     let diff = [];
     for (var i = 0; i < args.length; i++) {
         // Find the elements of each set not in the other set
-        var diff1 = args[i].filter(element => !diff.includes(element));
-        var diff2 = diff.filter(element => !args[i].includes(element));
+        let diff1 = args[i].filter(element => !diff.includes(element));
+        let diff2 = diff.filter(element => !args[i].includes(element));
         // Clear out duplicates and prepare for next comparison or return
         diff = Array.from(new Set(diff1.concat(diff2))).sort();
     }
@@ -67,7 +67,7 @@ function testAlgorithm() {
 
     let utilities = require('../utilities');
 
-    for (var i = 0; i < cases.length; i++) {
+    for (let i = 0; i < cases.length; i++) {
         let result = symmetricDifference(cases[i].values);
         if (!utilities.areEquals(result, cases[i].expected)) {
             messages.push(`symmetricDifference(${cases[i].values}) expected ${cases[i].expected} ` +
