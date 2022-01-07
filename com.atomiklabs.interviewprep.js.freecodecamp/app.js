@@ -7,6 +7,7 @@ runTests();
  */
 function runTests() {
     console.log("\n**** FreeCodeCamp Interview Prep ****\n");
-    require('./algorithms').runAlgorithms();
+    require('./Algorithms/algorithms').runAlgorithms();
+
 }
 

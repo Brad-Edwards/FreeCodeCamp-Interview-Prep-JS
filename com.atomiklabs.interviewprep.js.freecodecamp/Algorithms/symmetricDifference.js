@@ -1,24 +1,17 @@
-// algorithms.js
-// Implementations and tests for FreeCodeCamp interview questions algorithms exercises
+// symmetricDifference.js
 
 module.exports = {
-    runAlgorithms: function () {
-        console.log("*** Algorithms ***\n");
-
-        // Symmetric Difference
-        console.log("Symmetric Difference\n");
-        let messages = testSymmetricDifference();
-        messages.forEach(element => console.log(element));
-        console.log("\n");
-    }
+    tests: function () {
+        return testAlgorithm();
+    },
 }
-
-// Symmetric Difference
 
 /*
  * Produces the symmetric difference between pairs of sets of integers.
  * Returns: The symmetric difference of progressive binary comparisons of sets 
  *          of integers.
+ * Remarks: This took longer than I would like to admit. I went too complex initially. 
+ *          But this is my own implementation without looking at other sources.
  */
 function symmetricDifference(args) {
     // Set ground for first comparison
@@ -37,9 +30,9 @@ function symmetricDifference(args) {
  * Tests algorithms.symmetricDifference
  * Returns: error or success messages from tests
  */
-function testSymmetricDifference() {
+function testAlgorithm() {
     let messages = [];
-
+   
     // From FreeCodeCamp
     let cases = [
         {
@@ -72,9 +65,11 @@ function testSymmetricDifference() {
         }
     ];
 
+    let utilities = require('../utilities');
+
     for (var i = 0; i < cases.length; i++) {
         let result = symmetricDifference(cases[i].values);
-        if (!areEquals(result, cases[i].expected)) {
+        if (!utilities.areEquals(result, cases[i].expected)) {
             messages.push(`symmetricDifference(${cases[i].values}) expected ${cases[i].expected} ` +
                 `but result was ${result}`);
         }
@@ -83,19 +78,6 @@ function testSymmetricDifference() {
     if (messages.length == 0) {
         messages.push("All tests passed.");
     }
-
+    
     return messages;
-}
-
-// Utilities
-
-/*
- * Performs a deep comparison of two arrays.
- * Returns: true if the arrays are equal, otherwise false
- */
-function areEquals(arr1, arr2) {
-    if (arr1.length != arr2.length) {
-        return false;
-    }
-    return arr1.every((value, index) => value == arr2[index]);
 }

@@ -28,7 +28,10 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="algorithms.js">
+    <Content Include="Algorithms\algorithms.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Algorithms\symmetricDifference.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="app.js" />
@@ -37,6 +40,12 @@
     <Content Include="symmetricDiference.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="utilities.js">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Algorithms\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
 </Project>
