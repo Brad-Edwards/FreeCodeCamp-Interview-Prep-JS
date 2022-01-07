@@ -36,6 +36,9 @@
     <Content Include="Algorithms\inventoryUpdate.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Algorithms\permAlone.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Algorithms\symmetricDifference.js">
       <SubType>Code</SubType>
     </Content>

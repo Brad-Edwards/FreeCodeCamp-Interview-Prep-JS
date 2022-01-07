@@ -11,13 +11,21 @@ module.exports = {
         let symmetricMessages = require('./symmetricDifference').tests();
         symmetricMessages.forEach(element => messages.push(element));
         messages.push("\n");
-        messages.forEach(element => console.log(element));
+        //messages.forEach(element => console.log(element));
                
         // Inventory Update
         messages = [];
         messages = ["Inventory Update\n"];
         let inventoryMessages = require('./inventoryUpdate').tests();        
         inventoryMessages.forEach(element => messages.push(element));
+        messages.push("\n");
+        //messages.forEach(element => console.log(element));
+
+        // No Repeats Please (permAlone)
+        messages = [];
+        messages = ["No Repeats Please\n"];
+        let repeatMessages = require('./permAlone').tests();
+        repeatMessages.forEach(element => messages.push(element));
         messages.push("\n");
         messages.forEach(element => console.log(element));
     }
