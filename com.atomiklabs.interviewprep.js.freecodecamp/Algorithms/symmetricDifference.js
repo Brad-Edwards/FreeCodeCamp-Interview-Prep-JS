@@ -27,7 +27,7 @@ function symmetricDifference(args) {
 }
 
 /*
- * Tests algorithms.symmetricDifference
+ * Tests symmetricDifference
  * Returns: error or success messages from tests
  */
 function testAlgorithm() {
@@ -71,11 +71,11 @@ function testAlgorithm() {
         let result = symmetricDifference(cases[i].values);
         if (!utilities.areEquals(result, cases[i].expected)) {
             messages.push(`symmetricDifference(${cases[i].values}) expected ${cases[i].expected} ` +
-                `but result was ${result}`);
+                `but result was ${result}\n`);
         }
     }
 
-    if (messages.length == 0) {
+    if (messages.length === 0) {
         messages.push("All tests passed.");
     }
     
