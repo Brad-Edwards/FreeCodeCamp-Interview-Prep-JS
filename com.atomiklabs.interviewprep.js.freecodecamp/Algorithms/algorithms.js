@@ -3,13 +3,23 @@
 
 module.exports = {
     runAlgorithms: function () {
-        console.log("*** Algorithms ***\n");
+        let messages = [];
+        messages.push("*** Algorithms ***\n");
 
         // Symmetric Difference
-        console.log("Symmetric Difference\n");
-        let messages = require('./symmetricDifference').tests();
+        messages.push("Symmetric Difference\n");
+        let symmetricMessages = require('./symmetricDifference').tests();
+        symmetricMessages.forEach(element => messages.push(element));
+        messages.push("\n");
         messages.forEach(element => console.log(element));
-        console.log("\n");
+               
+        // Inventory Update
+        messages = [];
+        messages = ["Inventory Update\n"];
+        let inventoryMessages = require('./inventoryUpdate').tests();        
+        inventoryMessages.forEach(element => messages.push(element));
+        messages.push("\n");
+        messages.forEach(element => console.log(element));
     }
 }
 
