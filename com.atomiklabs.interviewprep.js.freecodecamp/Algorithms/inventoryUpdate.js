@@ -9,7 +9,11 @@ module.exports = {
 /*
  * Updates existing inventory quantities in one array with the 
  * quantities in the second.
+ * Params: arr1 - Current inventory as 2D array of [amount, item name]
+ * Params: arr2 - Updatse to inventory as a 2D array of [amount, item name]
  * Returns: An updated inventory array.
+ * Remarks: This was fairly straightforward, I was able to implement
+ * it without needing any hints, beyond looking up JS syntax.
  */ 
 function inventoryUpdate(arr1, arr2) {
 
