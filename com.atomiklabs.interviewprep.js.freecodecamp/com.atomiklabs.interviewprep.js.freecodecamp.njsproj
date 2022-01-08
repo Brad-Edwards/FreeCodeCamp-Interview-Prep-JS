@@ -36,6 +36,9 @@
     <Content Include="Algorithms\bubbleSort.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Algorithms\insertionSort.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Algorithms\inventoryUpdate.js">
       <SubType>Code</SubType>
     </Content>
