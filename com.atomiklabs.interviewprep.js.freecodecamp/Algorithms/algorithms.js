@@ -36,6 +36,12 @@ module.exports = {
         bubbleMessages.forEach(element => messages.push(element));
         messages.push("\n");
 
+        // Selection Sort
+        messages.push("-Selection Sort-");
+        let selectionMessages = require('./selectionSort').tests();
+        selectionMessages.forEach(element => messages.push(element));
+        messages.push("\n");
+
         // Report
         messages.forEach(element => console.log(element));
     }
