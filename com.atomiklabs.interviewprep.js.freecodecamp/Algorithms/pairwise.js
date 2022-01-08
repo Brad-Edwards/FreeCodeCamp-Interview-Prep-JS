@@ -69,7 +69,6 @@ function testAlgorithm() {
 
     for (let i = 0; i < cases.length; i++) {
         let result = pairwise(...cases[i].values);
-        console.log(result);
         if (result !== cases[i].expected) {
             messages.push(`pairwise(${cases[i].values[0]}, ${cases[i].values[1]})\n` +
                 `Expected: ${cases[i].values[1]}\n` +
