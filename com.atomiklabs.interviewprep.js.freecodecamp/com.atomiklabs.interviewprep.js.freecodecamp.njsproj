@@ -48,9 +48,6 @@
     <Content Include="Algorithms\permAlone.js">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="Algorithms\quickSort.js">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="Algorithms\selectionSort.js">
       <SubType>Code</SubType>
     </Content>

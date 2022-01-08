@@ -48,12 +48,6 @@ module.exports = {
         insertionMessages.forEach(element => messages.push(element));
         messages.push("\n");
 
-        // Quick Sort
-        messages.push("-Quick Sort-");
-        let quickMessages = require('./quickSort').tests();
-        quickMessages.forEach(element => messages.push(element));
-        messages.push("\n");
-
         // Report
         messages.forEach(element => console.log(element));
     }
