@@ -24,9 +24,16 @@ module.exports = {
         repeatMessages.forEach(element => messages.push(element));
         messages.push("\n");
 
+        // Pairwise
         messages.push("-Pairwise-\n");
         let pairwiseMessages = require('./pairwise').tests();
         pairwiseMessages.forEach(element => messages.push(element));
+        messages.push("\n");
+
+        // Bubble Sort
+        messages.push("-Bubble Sort-");
+        let bubbleMessages = require('./bubbleSort').tests();
+        bubbleMessages.forEach(element => messages.push(element));
         messages.push("\n");
 
         // Report
