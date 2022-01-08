@@ -42,6 +42,12 @@ module.exports = {
         selectionMessages.forEach(element => messages.push(element));
         messages.push("\n");
 
+        // Insertion Sort
+        messages.push("-Insertion Sort-");
+        let insertionMessages = require('./insertionSort').tests();
+        insertionMessages.forEach(element => messages.push(element));
+        messages.push("\n");
+
         // Report
         messages.forEach(element => console.log(element));
     }
