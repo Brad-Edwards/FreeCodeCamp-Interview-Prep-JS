@@ -13,7 +13,7 @@ module.exports = {
  * Remarks: I initially tried to implement this with array.forEach, forgot 
  * to include the index parameter, and had to scrap it and use a for loop. 
  * Then I realized my mistake and used the forEach with the param. Small 
- * oversight!
+ * oversight.
  */
 function quickSort(array) {
     // base case
