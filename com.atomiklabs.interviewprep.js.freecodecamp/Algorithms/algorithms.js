@@ -24,6 +24,11 @@ module.exports = {
         repeatMessages.forEach(element => messages.push(element));
         messages.push("\n");
 
+        messages.push("-Pairwise-\n");
+        let pairwiseMessages = require('./pairwise').tests();
+        pairwiseMessages.forEach(element => messages.push(element));
+        messages.push("\n");
+
         // Report
         messages.forEach(element => console.log(element));
     }
