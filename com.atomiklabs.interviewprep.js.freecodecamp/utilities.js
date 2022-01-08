@@ -8,6 +8,8 @@ module.exports = {
 
 /*
  * Performs a deep comparison of two arrays.
+ * Param: arr1 - First array for comparison
+ * Param: arr2 - Second array for comparison
  * Returns: true if the arrays are equal, otherwise false
  */
 function areEquals(arr1, arr2) {
@@ -15,13 +17,4 @@ function areEquals(arr1, arr2) {
         return false;
     }
     return arr1.every((value, index) => value === arr2[index]);
-}
-
-function areEquals1(arr1, arr2) {
-    // Unequal size is quick fail
-    if (arr1.length !== arr2.length || typeof(arr1) !== typeof(arr2)) {
-        return false;
-    }
-
-    return true;
 }

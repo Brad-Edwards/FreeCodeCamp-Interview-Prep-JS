@@ -8,6 +8,7 @@ module.exports = {
 
 /*
  * Produces the symmetric difference between pairs of sets of integers.
+ * Param: args - Array of sets of integers to compare for symmetric differences
  * Returns: The symmetric difference of progressive binary comparisons of sets 
  *          of integers.
  * Remarks: This took longer than I would like to admit. I went too complex initially. 
