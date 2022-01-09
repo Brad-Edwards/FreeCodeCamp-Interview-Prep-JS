@@ -54,6 +54,12 @@ module.exports = {
         quickMessages.forEach(element => messages.push(element));
         messages.push("\n");
 
+        // Merge Sort
+        messages.push("-Merge Sort-");
+        let mergeMessages = require('./mergeSort').tests();
+        mergeMessages.forEach(element => messages.push(element));
+        messages.push("\n");
+
         // Report
         messages.forEach(element => console.log(element));
     }
