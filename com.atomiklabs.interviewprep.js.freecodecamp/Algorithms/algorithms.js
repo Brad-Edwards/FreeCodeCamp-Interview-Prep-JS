@@ -59,6 +59,13 @@ module.exports = {
         let mergeMessages = require('./mergeSort').tests();
         mergeMessages.forEach(element => messages.push(element));
         messages.push("\n");
+        
+        // Binary Search
+        messages.push("-Binary Search-");
+        let binaryMessages = require('./binarySearch').tests();
+        console.log(binaryMessages)
+        binaryMessages.forEach(element => messages.push(element));
+        messages.push("\n");
 
         // Report
         messages.forEach(element => console.log(element));

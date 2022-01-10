@@ -33,6 +33,9 @@
     <Content Include="Algorithms\algorithms.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Algorithms\binarySearch.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Algorithms\bubbleSort.js">
       <SubType>Code</SubType>
     </Content>
